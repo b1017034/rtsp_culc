@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../librtsp/include/rtsp/common.h
+errno.h
+-
+inttypes.h
+-
+libpomp.h
+-
+
+/root/rtsp_culc/main.c
+stdio.h
+-
+rtsp/common.h
+/root/rtsp_culc/rtsp/common.h
+

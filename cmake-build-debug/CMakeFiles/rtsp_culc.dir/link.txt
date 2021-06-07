@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/rtsp_culc.dir/main.c.o -o rtsp_culc  -llibrtsp/src 
