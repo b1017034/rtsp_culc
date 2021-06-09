@@ -58,38 +58,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /root/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /root/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /root/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake -E rm -f
+RM = /root/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/rtsp_culc
+CMAKE_SOURCE_DIR = /root/Documents/rtsp_culc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/rtsp_culc/cmake-build-debug
+CMAKE_BINARY_DIR = /root/Documents/rtsp_culc/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/root/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/root/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/root/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -97,11 +86,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/root/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/rtsp_culc/cmake-build-debug/CMakeFiles /root/rtsp_culc/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles /root/Documents/rtsp_culc/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/rtsp_culc/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,895 @@ rtsp_culc/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtsp_culc.dir/build.make CMakeFiles/rtsp_culc.dir/build
 .PHONY : rtsp_culc/fast
 
+#=============================================================================
+# Target rules for targets named libpomp
+
+# Build rule for target.
+libpomp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libpomp
+.PHONY : libpomp
+
+# fast build rule for target.
+libpomp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/build
+.PHONY : libpomp/fast
+
+#=============================================================================
+# Target rules for targets named libulog
+
+# Build rule for target.
+libulog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libulog
+.PHONY : libulog
+
+# fast build rule for target.
+libulog/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/build
+.PHONY : libulog/fast
+
+#=============================================================================
+# Target rules for targets named librtsp
+
+# Build rule for target.
+librtsp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 librtsp
+.PHONY : librtsp
+
+# fast build rule for target.
+librtsp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/build
+.PHONY : librtsp/fast
+
+#=============================================================================
+# Target rules for targets named libfutils
+
+# Build rule for target.
+libfutils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libfutils
+.PHONY : libfutils
+
+# fast build rule for target.
+libfutils/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/build
+.PHONY : libfutils/fast
+
+libfutils/src/dynmbox.o: libfutils/src/dynmbox.c.o
+
+.PHONY : libfutils/src/dynmbox.o
+
+# target to build an object file
+libfutils/src/dynmbox.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/dynmbox.c.o
+.PHONY : libfutils/src/dynmbox.c.o
+
+libfutils/src/dynmbox.i: libfutils/src/dynmbox.c.i
+
+.PHONY : libfutils/src/dynmbox.i
+
+# target to preprocess a source file
+libfutils/src/dynmbox.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/dynmbox.c.i
+.PHONY : libfutils/src/dynmbox.c.i
+
+libfutils/src/dynmbox.s: libfutils/src/dynmbox.c.s
+
+.PHONY : libfutils/src/dynmbox.s
+
+# target to generate assembly for a file
+libfutils/src/dynmbox.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/dynmbox.c.s
+.PHONY : libfutils/src/dynmbox.c.s
+
+libfutils/src/fdutils.o: libfutils/src/fdutils.c.o
+
+.PHONY : libfutils/src/fdutils.o
+
+# target to build an object file
+libfutils/src/fdutils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/fdutils.c.o
+.PHONY : libfutils/src/fdutils.c.o
+
+libfutils/src/fdutils.i: libfutils/src/fdutils.c.i
+
+.PHONY : libfutils/src/fdutils.i
+
+# target to preprocess a source file
+libfutils/src/fdutils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/fdutils.c.i
+.PHONY : libfutils/src/fdutils.c.i
+
+libfutils/src/fdutils.s: libfutils/src/fdutils.c.s
+
+.PHONY : libfutils/src/fdutils.s
+
+# target to generate assembly for a file
+libfutils/src/fdutils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/fdutils.c.s
+.PHONY : libfutils/src/fdutils.c.s
+
+libfutils/src/fs.o: libfutils/src/fs.c.o
+
+.PHONY : libfutils/src/fs.o
+
+# target to build an object file
+libfutils/src/fs.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/fs.c.o
+.PHONY : libfutils/src/fs.c.o
+
+libfutils/src/fs.i: libfutils/src/fs.c.i
+
+.PHONY : libfutils/src/fs.i
+
+# target to preprocess a source file
+libfutils/src/fs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/fs.c.i
+.PHONY : libfutils/src/fs.c.i
+
+libfutils/src/fs.s: libfutils/src/fs.c.s
+
+.PHONY : libfutils/src/fs.s
+
+# target to generate assembly for a file
+libfutils/src/fs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/fs.c.s
+.PHONY : libfutils/src/fs.c.s
+
+libfutils/src/hash.o: libfutils/src/hash.c.o
+
+.PHONY : libfutils/src/hash.o
+
+# target to build an object file
+libfutils/src/hash.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/hash.c.o
+.PHONY : libfutils/src/hash.c.o
+
+libfutils/src/hash.i: libfutils/src/hash.c.i
+
+.PHONY : libfutils/src/hash.i
+
+# target to preprocess a source file
+libfutils/src/hash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/hash.c.i
+.PHONY : libfutils/src/hash.c.i
+
+libfutils/src/hash.s: libfutils/src/hash.c.s
+
+.PHONY : libfutils/src/hash.s
+
+# target to generate assembly for a file
+libfutils/src/hash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/hash.c.s
+.PHONY : libfutils/src/hash.c.s
+
+libfutils/src/inotify.o: libfutils/src/inotify.c.o
+
+.PHONY : libfutils/src/inotify.o
+
+# target to build an object file
+libfutils/src/inotify.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/inotify.c.o
+.PHONY : libfutils/src/inotify.c.o
+
+libfutils/src/inotify.i: libfutils/src/inotify.c.i
+
+.PHONY : libfutils/src/inotify.i
+
+# target to preprocess a source file
+libfutils/src/inotify.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/inotify.c.i
+.PHONY : libfutils/src/inotify.c.i
+
+libfutils/src/inotify.s: libfutils/src/inotify.c.s
+
+.PHONY : libfutils/src/inotify.s
+
+# target to generate assembly for a file
+libfutils/src/inotify.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/inotify.c.s
+.PHONY : libfutils/src/inotify.c.s
+
+libfutils/src/mbox.o: libfutils/src/mbox.c.o
+
+.PHONY : libfutils/src/mbox.o
+
+# target to build an object file
+libfutils/src/mbox.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/mbox.c.o
+.PHONY : libfutils/src/mbox.c.o
+
+libfutils/src/mbox.i: libfutils/src/mbox.c.i
+
+.PHONY : libfutils/src/mbox.i
+
+# target to preprocess a source file
+libfutils/src/mbox.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/mbox.c.i
+.PHONY : libfutils/src/mbox.c.i
+
+libfutils/src/mbox.s: libfutils/src/mbox.c.s
+
+.PHONY : libfutils/src/mbox.s
+
+# target to generate assembly for a file
+libfutils/src/mbox.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/mbox.c.s
+.PHONY : libfutils/src/mbox.c.s
+
+libfutils/src/random.o: libfutils/src/random.c.o
+
+.PHONY : libfutils/src/random.o
+
+# target to build an object file
+libfutils/src/random.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/random.c.o
+.PHONY : libfutils/src/random.c.o
+
+libfutils/src/random.i: libfutils/src/random.c.i
+
+.PHONY : libfutils/src/random.i
+
+# target to preprocess a source file
+libfutils/src/random.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/random.c.i
+.PHONY : libfutils/src/random.c.i
+
+libfutils/src/random.s: libfutils/src/random.c.s
+
+.PHONY : libfutils/src/random.s
+
+# target to generate assembly for a file
+libfutils/src/random.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/random.c.s
+.PHONY : libfutils/src/random.c.s
+
+libfutils/src/safew.o: libfutils/src/safew.c.o
+
+.PHONY : libfutils/src/safew.o
+
+# target to build an object file
+libfutils/src/safew.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/safew.c.o
+.PHONY : libfutils/src/safew.c.o
+
+libfutils/src/safew.i: libfutils/src/safew.c.i
+
+.PHONY : libfutils/src/safew.i
+
+# target to preprocess a source file
+libfutils/src/safew.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/safew.c.i
+.PHONY : libfutils/src/safew.c.i
+
+libfutils/src/safew.s: libfutils/src/safew.c.s
+
+.PHONY : libfutils/src/safew.s
+
+# target to generate assembly for a file
+libfutils/src/safew.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/safew.c.s
+.PHONY : libfutils/src/safew.c.s
+
+libfutils/src/synctools.o: libfutils/src/synctools.c.o
+
+.PHONY : libfutils/src/synctools.o
+
+# target to build an object file
+libfutils/src/synctools.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/synctools.c.o
+.PHONY : libfutils/src/synctools.c.o
+
+libfutils/src/synctools.i: libfutils/src/synctools.c.i
+
+.PHONY : libfutils/src/synctools.i
+
+# target to preprocess a source file
+libfutils/src/synctools.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/synctools.c.i
+.PHONY : libfutils/src/synctools.c.i
+
+libfutils/src/synctools.s: libfutils/src/synctools.c.s
+
+.PHONY : libfutils/src/synctools.s
+
+# target to generate assembly for a file
+libfutils/src/synctools.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/synctools.c.s
+.PHONY : libfutils/src/synctools.c.s
+
+libfutils/src/systimetools.o: libfutils/src/systimetools.c.o
+
+.PHONY : libfutils/src/systimetools.o
+
+# target to build an object file
+libfutils/src/systimetools.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/systimetools.c.o
+.PHONY : libfutils/src/systimetools.c.o
+
+libfutils/src/systimetools.i: libfutils/src/systimetools.c.i
+
+.PHONY : libfutils/src/systimetools.i
+
+# target to preprocess a source file
+libfutils/src/systimetools.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/systimetools.c.i
+.PHONY : libfutils/src/systimetools.c.i
+
+libfutils/src/systimetools.s: libfutils/src/systimetools.c.s
+
+.PHONY : libfutils/src/systimetools.s
+
+# target to generate assembly for a file
+libfutils/src/systimetools.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/systimetools.c.s
+.PHONY : libfutils/src/systimetools.c.s
+
+libfutils/src/timetools.o: libfutils/src/timetools.c.o
+
+.PHONY : libfutils/src/timetools.o
+
+# target to build an object file
+libfutils/src/timetools.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/timetools.c.o
+.PHONY : libfutils/src/timetools.c.o
+
+libfutils/src/timetools.i: libfutils/src/timetools.c.i
+
+.PHONY : libfutils/src/timetools.i
+
+# target to preprocess a source file
+libfutils/src/timetools.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/timetools.c.i
+.PHONY : libfutils/src/timetools.c.i
+
+libfutils/src/timetools.s: libfutils/src/timetools.c.s
+
+.PHONY : libfutils/src/timetools.s
+
+# target to generate assembly for a file
+libfutils/src/timetools.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/timetools.c.s
+.PHONY : libfutils/src/timetools.c.s
+
+libfutils/src/varint.o: libfutils/src/varint.c.o
+
+.PHONY : libfutils/src/varint.o
+
+# target to build an object file
+libfutils/src/varint.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/varint.c.o
+.PHONY : libfutils/src/varint.c.o
+
+libfutils/src/varint.i: libfutils/src/varint.c.i
+
+.PHONY : libfutils/src/varint.i
+
+# target to preprocess a source file
+libfutils/src/varint.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/varint.c.i
+.PHONY : libfutils/src/varint.c.i
+
+libfutils/src/varint.s: libfutils/src/varint.c.s
+
+.PHONY : libfutils/src/varint.s
+
+# target to generate assembly for a file
+libfutils/src/varint.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfutils.dir/build.make CMakeFiles/libfutils.dir/libfutils/src/varint.c.s
+.PHONY : libfutils/src/varint.c.s
+
+libpomp/src/pomp_addr.o: libpomp/src/pomp_addr.c.o
+
+.PHONY : libpomp/src/pomp_addr.o
+
+# target to build an object file
+libpomp/src/pomp_addr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_addr.c.o
+.PHONY : libpomp/src/pomp_addr.c.o
+
+libpomp/src/pomp_addr.i: libpomp/src/pomp_addr.c.i
+
+.PHONY : libpomp/src/pomp_addr.i
+
+# target to preprocess a source file
+libpomp/src/pomp_addr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_addr.c.i
+.PHONY : libpomp/src/pomp_addr.c.i
+
+libpomp/src/pomp_addr.s: libpomp/src/pomp_addr.c.s
+
+.PHONY : libpomp/src/pomp_addr.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_addr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_addr.c.s
+.PHONY : libpomp/src/pomp_addr.c.s
+
+libpomp/src/pomp_buffer.o: libpomp/src/pomp_buffer.c.o
+
+.PHONY : libpomp/src/pomp_buffer.o
+
+# target to build an object file
+libpomp/src/pomp_buffer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_buffer.c.o
+.PHONY : libpomp/src/pomp_buffer.c.o
+
+libpomp/src/pomp_buffer.i: libpomp/src/pomp_buffer.c.i
+
+.PHONY : libpomp/src/pomp_buffer.i
+
+# target to preprocess a source file
+libpomp/src/pomp_buffer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_buffer.c.i
+.PHONY : libpomp/src/pomp_buffer.c.i
+
+libpomp/src/pomp_buffer.s: libpomp/src/pomp_buffer.c.s
+
+.PHONY : libpomp/src/pomp_buffer.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_buffer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_buffer.c.s
+.PHONY : libpomp/src/pomp_buffer.c.s
+
+libpomp/src/pomp_conn.o: libpomp/src/pomp_conn.c.o
+
+.PHONY : libpomp/src/pomp_conn.o
+
+# target to build an object file
+libpomp/src/pomp_conn.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_conn.c.o
+.PHONY : libpomp/src/pomp_conn.c.o
+
+libpomp/src/pomp_conn.i: libpomp/src/pomp_conn.c.i
+
+.PHONY : libpomp/src/pomp_conn.i
+
+# target to preprocess a source file
+libpomp/src/pomp_conn.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_conn.c.i
+.PHONY : libpomp/src/pomp_conn.c.i
+
+libpomp/src/pomp_conn.s: libpomp/src/pomp_conn.c.s
+
+.PHONY : libpomp/src/pomp_conn.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_conn.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_conn.c.s
+.PHONY : libpomp/src/pomp_conn.c.s
+
+libpomp/src/pomp_ctx.o: libpomp/src/pomp_ctx.c.o
+
+.PHONY : libpomp/src/pomp_ctx.o
+
+# target to build an object file
+libpomp/src/pomp_ctx.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_ctx.c.o
+.PHONY : libpomp/src/pomp_ctx.c.o
+
+libpomp/src/pomp_ctx.i: libpomp/src/pomp_ctx.c.i
+
+.PHONY : libpomp/src/pomp_ctx.i
+
+# target to preprocess a source file
+libpomp/src/pomp_ctx.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_ctx.c.i
+.PHONY : libpomp/src/pomp_ctx.c.i
+
+libpomp/src/pomp_ctx.s: libpomp/src/pomp_ctx.c.s
+
+.PHONY : libpomp/src/pomp_ctx.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_ctx.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_ctx.c.s
+.PHONY : libpomp/src/pomp_ctx.c.s
+
+libpomp/src/pomp_decoder.o: libpomp/src/pomp_decoder.c.o
+
+.PHONY : libpomp/src/pomp_decoder.o
+
+# target to build an object file
+libpomp/src/pomp_decoder.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_decoder.c.o
+.PHONY : libpomp/src/pomp_decoder.c.o
+
+libpomp/src/pomp_decoder.i: libpomp/src/pomp_decoder.c.i
+
+.PHONY : libpomp/src/pomp_decoder.i
+
+# target to preprocess a source file
+libpomp/src/pomp_decoder.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_decoder.c.i
+.PHONY : libpomp/src/pomp_decoder.c.i
+
+libpomp/src/pomp_decoder.s: libpomp/src/pomp_decoder.c.s
+
+.PHONY : libpomp/src/pomp_decoder.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_decoder.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_decoder.c.s
+.PHONY : libpomp/src/pomp_decoder.c.s
+
+libpomp/src/pomp_encoder.o: libpomp/src/pomp_encoder.c.o
+
+.PHONY : libpomp/src/pomp_encoder.o
+
+# target to build an object file
+libpomp/src/pomp_encoder.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_encoder.c.o
+.PHONY : libpomp/src/pomp_encoder.c.o
+
+libpomp/src/pomp_encoder.i: libpomp/src/pomp_encoder.c.i
+
+.PHONY : libpomp/src/pomp_encoder.i
+
+# target to preprocess a source file
+libpomp/src/pomp_encoder.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_encoder.c.i
+.PHONY : libpomp/src/pomp_encoder.c.i
+
+libpomp/src/pomp_encoder.s: libpomp/src/pomp_encoder.c.s
+
+.PHONY : libpomp/src/pomp_encoder.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_encoder.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_encoder.c.s
+.PHONY : libpomp/src/pomp_encoder.c.s
+
+libpomp/src/pomp_evt.o: libpomp/src/pomp_evt.c.o
+
+.PHONY : libpomp/src/pomp_evt.o
+
+# target to build an object file
+libpomp/src/pomp_evt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_evt.c.o
+.PHONY : libpomp/src/pomp_evt.c.o
+
+libpomp/src/pomp_evt.i: libpomp/src/pomp_evt.c.i
+
+.PHONY : libpomp/src/pomp_evt.i
+
+# target to preprocess a source file
+libpomp/src/pomp_evt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_evt.c.i
+.PHONY : libpomp/src/pomp_evt.c.i
+
+libpomp/src/pomp_evt.s: libpomp/src/pomp_evt.c.s
+
+.PHONY : libpomp/src/pomp_evt.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_evt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_evt.c.s
+.PHONY : libpomp/src/pomp_evt.c.s
+
+libpomp/src/pomp_log.o: libpomp/src/pomp_log.c.o
+
+.PHONY : libpomp/src/pomp_log.o
+
+# target to build an object file
+libpomp/src/pomp_log.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_log.c.o
+.PHONY : libpomp/src/pomp_log.c.o
+
+libpomp/src/pomp_log.i: libpomp/src/pomp_log.c.i
+
+.PHONY : libpomp/src/pomp_log.i
+
+# target to preprocess a source file
+libpomp/src/pomp_log.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_log.c.i
+.PHONY : libpomp/src/pomp_log.c.i
+
+libpomp/src/pomp_log.s: libpomp/src/pomp_log.c.s
+
+.PHONY : libpomp/src/pomp_log.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_log.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_log.c.s
+.PHONY : libpomp/src/pomp_log.c.s
+
+libpomp/src/pomp_loop.o: libpomp/src/pomp_loop.c.o
+
+.PHONY : libpomp/src/pomp_loop.o
+
+# target to build an object file
+libpomp/src/pomp_loop.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_loop.c.o
+.PHONY : libpomp/src/pomp_loop.c.o
+
+libpomp/src/pomp_loop.i: libpomp/src/pomp_loop.c.i
+
+.PHONY : libpomp/src/pomp_loop.i
+
+# target to preprocess a source file
+libpomp/src/pomp_loop.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_loop.c.i
+.PHONY : libpomp/src/pomp_loop.c.i
+
+libpomp/src/pomp_loop.s: libpomp/src/pomp_loop.c.s
+
+.PHONY : libpomp/src/pomp_loop.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_loop.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_loop.c.s
+.PHONY : libpomp/src/pomp_loop.c.s
+
+libpomp/src/pomp_msg.o: libpomp/src/pomp_msg.c.o
+
+.PHONY : libpomp/src/pomp_msg.o
+
+# target to build an object file
+libpomp/src/pomp_msg.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_msg.c.o
+.PHONY : libpomp/src/pomp_msg.c.o
+
+libpomp/src/pomp_msg.i: libpomp/src/pomp_msg.c.i
+
+.PHONY : libpomp/src/pomp_msg.i
+
+# target to preprocess a source file
+libpomp/src/pomp_msg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_msg.c.i
+.PHONY : libpomp/src/pomp_msg.c.i
+
+libpomp/src/pomp_msg.s: libpomp/src/pomp_msg.c.s
+
+.PHONY : libpomp/src/pomp_msg.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_msg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_msg.c.s
+.PHONY : libpomp/src/pomp_msg.c.s
+
+libpomp/src/pomp_prot.o: libpomp/src/pomp_prot.c.o
+
+.PHONY : libpomp/src/pomp_prot.o
+
+# target to build an object file
+libpomp/src/pomp_prot.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_prot.c.o
+.PHONY : libpomp/src/pomp_prot.c.o
+
+libpomp/src/pomp_prot.i: libpomp/src/pomp_prot.c.i
+
+.PHONY : libpomp/src/pomp_prot.i
+
+# target to preprocess a source file
+libpomp/src/pomp_prot.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_prot.c.i
+.PHONY : libpomp/src/pomp_prot.c.i
+
+libpomp/src/pomp_prot.s: libpomp/src/pomp_prot.c.s
+
+.PHONY : libpomp/src/pomp_prot.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_prot.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_prot.c.s
+.PHONY : libpomp/src/pomp_prot.c.s
+
+libpomp/src/pomp_timer.o: libpomp/src/pomp_timer.c.o
+
+.PHONY : libpomp/src/pomp_timer.o
+
+# target to build an object file
+libpomp/src/pomp_timer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_timer.c.o
+.PHONY : libpomp/src/pomp_timer.c.o
+
+libpomp/src/pomp_timer.i: libpomp/src/pomp_timer.c.i
+
+.PHONY : libpomp/src/pomp_timer.i
+
+# target to preprocess a source file
+libpomp/src/pomp_timer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_timer.c.i
+.PHONY : libpomp/src/pomp_timer.c.i
+
+libpomp/src/pomp_timer.s: libpomp/src/pomp_timer.c.s
+
+.PHONY : libpomp/src/pomp_timer.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_timer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_timer.c.s
+.PHONY : libpomp/src/pomp_timer.c.s
+
+libpomp/src/pomp_watchdog.o: libpomp/src/pomp_watchdog.c.o
+
+.PHONY : libpomp/src/pomp_watchdog.o
+
+# target to build an object file
+libpomp/src/pomp_watchdog.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_watchdog.c.o
+.PHONY : libpomp/src/pomp_watchdog.c.o
+
+libpomp/src/pomp_watchdog.i: libpomp/src/pomp_watchdog.c.i
+
+.PHONY : libpomp/src/pomp_watchdog.i
+
+# target to preprocess a source file
+libpomp/src/pomp_watchdog.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_watchdog.c.i
+.PHONY : libpomp/src/pomp_watchdog.c.i
+
+libpomp/src/pomp_watchdog.s: libpomp/src/pomp_watchdog.c.s
+
+.PHONY : libpomp/src/pomp_watchdog.s
+
+# target to generate assembly for a file
+libpomp/src/pomp_watchdog.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpomp.dir/build.make CMakeFiles/libpomp.dir/libpomp/src/pomp_watchdog.c.s
+.PHONY : libpomp/src/pomp_watchdog.c.s
+
+librtsp/src/rtsp.o: librtsp/src/rtsp.c.o
+
+.PHONY : librtsp/src/rtsp.o
+
+# target to build an object file
+librtsp/src/rtsp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp.c.o
+.PHONY : librtsp/src/rtsp.c.o
+
+librtsp/src/rtsp.i: librtsp/src/rtsp.c.i
+
+.PHONY : librtsp/src/rtsp.i
+
+# target to preprocess a source file
+librtsp/src/rtsp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp.c.i
+.PHONY : librtsp/src/rtsp.c.i
+
+librtsp/src/rtsp.s: librtsp/src/rtsp.c.s
+
+.PHONY : librtsp/src/rtsp.s
+
+# target to generate assembly for a file
+librtsp/src/rtsp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp.c.s
+.PHONY : librtsp/src/rtsp.c.s
+
+librtsp/src/rtsp_client.o: librtsp/src/rtsp_client.c.o
+
+.PHONY : librtsp/src/rtsp_client.o
+
+# target to build an object file
+librtsp/src/rtsp_client.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_client.c.o
+.PHONY : librtsp/src/rtsp_client.c.o
+
+librtsp/src/rtsp_client.i: librtsp/src/rtsp_client.c.i
+
+.PHONY : librtsp/src/rtsp_client.i
+
+# target to preprocess a source file
+librtsp/src/rtsp_client.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_client.c.i
+.PHONY : librtsp/src/rtsp_client.c.i
+
+librtsp/src/rtsp_client.s: librtsp/src/rtsp_client.c.s
+
+.PHONY : librtsp/src/rtsp_client.s
+
+# target to generate assembly for a file
+librtsp/src/rtsp_client.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_client.c.s
+.PHONY : librtsp/src/rtsp_client.c.s
+
+librtsp/src/rtsp_client_session.o: librtsp/src/rtsp_client_session.c.o
+
+.PHONY : librtsp/src/rtsp_client_session.o
+
+# target to build an object file
+librtsp/src/rtsp_client_session.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_client_session.c.o
+.PHONY : librtsp/src/rtsp_client_session.c.o
+
+librtsp/src/rtsp_client_session.i: librtsp/src/rtsp_client_session.c.i
+
+.PHONY : librtsp/src/rtsp_client_session.i
+
+# target to preprocess a source file
+librtsp/src/rtsp_client_session.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_client_session.c.i
+.PHONY : librtsp/src/rtsp_client_session.c.i
+
+librtsp/src/rtsp_client_session.s: librtsp/src/rtsp_client_session.c.s
+
+.PHONY : librtsp/src/rtsp_client_session.s
+
+# target to generate assembly for a file
+librtsp/src/rtsp_client_session.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_client_session.c.s
+.PHONY : librtsp/src/rtsp_client_session.c.s
+
+librtsp/src/rtsp_server.o: librtsp/src/rtsp_server.c.o
+
+.PHONY : librtsp/src/rtsp_server.o
+
+# target to build an object file
+librtsp/src/rtsp_server.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_server.c.o
+.PHONY : librtsp/src/rtsp_server.c.o
+
+librtsp/src/rtsp_server.i: librtsp/src/rtsp_server.c.i
+
+.PHONY : librtsp/src/rtsp_server.i
+
+# target to preprocess a source file
+librtsp/src/rtsp_server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_server.c.i
+.PHONY : librtsp/src/rtsp_server.c.i
+
+librtsp/src/rtsp_server.s: librtsp/src/rtsp_server.c.s
+
+.PHONY : librtsp/src/rtsp_server.s
+
+# target to generate assembly for a file
+librtsp/src/rtsp_server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_server.c.s
+.PHONY : librtsp/src/rtsp_server.c.s
+
+librtsp/src/rtsp_server_request.o: librtsp/src/rtsp_server_request.c.o
+
+.PHONY : librtsp/src/rtsp_server_request.o
+
+# target to build an object file
+librtsp/src/rtsp_server_request.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_server_request.c.o
+.PHONY : librtsp/src/rtsp_server_request.c.o
+
+librtsp/src/rtsp_server_request.i: librtsp/src/rtsp_server_request.c.i
+
+.PHONY : librtsp/src/rtsp_server_request.i
+
+# target to preprocess a source file
+librtsp/src/rtsp_server_request.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_server_request.c.i
+.PHONY : librtsp/src/rtsp_server_request.c.i
+
+librtsp/src/rtsp_server_request.s: librtsp/src/rtsp_server_request.c.s
+
+.PHONY : librtsp/src/rtsp_server_request.s
+
+# target to generate assembly for a file
+librtsp/src/rtsp_server_request.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_server_request.c.s
+.PHONY : librtsp/src/rtsp_server_request.c.s
+
+librtsp/src/rtsp_server_session.o: librtsp/src/rtsp_server_session.c.o
+
+.PHONY : librtsp/src/rtsp_server_session.o
+
+# target to build an object file
+librtsp/src/rtsp_server_session.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_server_session.c.o
+.PHONY : librtsp/src/rtsp_server_session.c.o
+
+librtsp/src/rtsp_server_session.i: librtsp/src/rtsp_server_session.c.i
+
+.PHONY : librtsp/src/rtsp_server_session.i
+
+# target to preprocess a source file
+librtsp/src/rtsp_server_session.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_server_session.c.i
+.PHONY : librtsp/src/rtsp_server_session.c.i
+
+librtsp/src/rtsp_server_session.s: librtsp/src/rtsp_server_session.c.s
+
+.PHONY : librtsp/src/rtsp_server_session.s
+
+# target to generate assembly for a file
+librtsp/src/rtsp_server_session.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/librtsp.dir/build.make CMakeFiles/librtsp.dir/librtsp/src/rtsp_server_session.c.s
+.PHONY : librtsp/src/rtsp_server_session.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -169,6 +1058,141 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtsp_culc.dir/build.make CMakeFiles/rtsp_culc.dir/main.c.s
 .PHONY : main.c.s
 
+ulog/libulog/ulog_read.o: ulog/libulog/ulog_read.c.o
+
+.PHONY : ulog/libulog/ulog_read.o
+
+# target to build an object file
+ulog/libulog/ulog_read.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_read.c.o
+.PHONY : ulog/libulog/ulog_read.c.o
+
+ulog/libulog/ulog_read.i: ulog/libulog/ulog_read.c.i
+
+.PHONY : ulog/libulog/ulog_read.i
+
+# target to preprocess a source file
+ulog/libulog/ulog_read.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_read.c.i
+.PHONY : ulog/libulog/ulog_read.c.i
+
+ulog/libulog/ulog_read.s: ulog/libulog/ulog_read.c.s
+
+.PHONY : ulog/libulog/ulog_read.s
+
+# target to generate assembly for a file
+ulog/libulog/ulog_read.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_read.c.s
+.PHONY : ulog/libulog/ulog_read.c.s
+
+ulog/libulog/ulog_write.o: ulog/libulog/ulog_write.c.o
+
+.PHONY : ulog/libulog/ulog_write.o
+
+# target to build an object file
+ulog/libulog/ulog_write.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write.c.o
+.PHONY : ulog/libulog/ulog_write.c.o
+
+ulog/libulog/ulog_write.i: ulog/libulog/ulog_write.c.i
+
+.PHONY : ulog/libulog/ulog_write.i
+
+# target to preprocess a source file
+ulog/libulog/ulog_write.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write.c.i
+.PHONY : ulog/libulog/ulog_write.c.i
+
+ulog/libulog/ulog_write.s: ulog/libulog/ulog_write.c.s
+
+.PHONY : ulog/libulog/ulog_write.s
+
+# target to generate assembly for a file
+ulog/libulog/ulog_write.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write.c.s
+.PHONY : ulog/libulog/ulog_write.c.s
+
+ulog/libulog/ulog_write_android.o: ulog/libulog/ulog_write_android.c.o
+
+.PHONY : ulog/libulog/ulog_write_android.o
+
+# target to build an object file
+ulog/libulog/ulog_write_android.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write_android.c.o
+.PHONY : ulog/libulog/ulog_write_android.c.o
+
+ulog/libulog/ulog_write_android.i: ulog/libulog/ulog_write_android.c.i
+
+.PHONY : ulog/libulog/ulog_write_android.i
+
+# target to preprocess a source file
+ulog/libulog/ulog_write_android.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write_android.c.i
+.PHONY : ulog/libulog/ulog_write_android.c.i
+
+ulog/libulog/ulog_write_android.s: ulog/libulog/ulog_write_android.c.s
+
+.PHONY : ulog/libulog/ulog_write_android.s
+
+# target to generate assembly for a file
+ulog/libulog/ulog_write_android.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write_android.c.s
+.PHONY : ulog/libulog/ulog_write_android.c.s
+
+ulog/libulog/ulog_write_bin.o: ulog/libulog/ulog_write_bin.c.o
+
+.PHONY : ulog/libulog/ulog_write_bin.o
+
+# target to build an object file
+ulog/libulog/ulog_write_bin.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write_bin.c.o
+.PHONY : ulog/libulog/ulog_write_bin.c.o
+
+ulog/libulog/ulog_write_bin.i: ulog/libulog/ulog_write_bin.c.i
+
+.PHONY : ulog/libulog/ulog_write_bin.i
+
+# target to preprocess a source file
+ulog/libulog/ulog_write_bin.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write_bin.c.i
+.PHONY : ulog/libulog/ulog_write_bin.c.i
+
+ulog/libulog/ulog_write_bin.s: ulog/libulog/ulog_write_bin.c.s
+
+.PHONY : ulog/libulog/ulog_write_bin.s
+
+# target to generate assembly for a file
+ulog/libulog/ulog_write_bin.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write_bin.c.s
+.PHONY : ulog/libulog/ulog_write_bin.c.s
+
+ulog/libulog/ulog_write_raw.o: ulog/libulog/ulog_write_raw.c.o
+
+.PHONY : ulog/libulog/ulog_write_raw.o
+
+# target to build an object file
+ulog/libulog/ulog_write_raw.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write_raw.c.o
+.PHONY : ulog/libulog/ulog_write_raw.c.o
+
+ulog/libulog/ulog_write_raw.i: ulog/libulog/ulog_write_raw.c.i
+
+.PHONY : ulog/libulog/ulog_write_raw.i
+
+# target to preprocess a source file
+ulog/libulog/ulog_write_raw.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write_raw.c.i
+.PHONY : ulog/libulog/ulog_write_raw.c.i
+
+ulog/libulog/ulog_write_raw.s: ulog/libulog/ulog_write_raw.c.s
+
+.PHONY : ulog/libulog/ulog_write_raw.s
+
+# target to generate assembly for a file
+ulog/libulog/ulog_write_raw.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libulog.dir/build.make CMakeFiles/libulog.dir/ulog/libulog/ulog_write_raw.c.s
+.PHONY : ulog/libulog/ulog_write_raw.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -177,10 +1201,122 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... libfutils"
+	@echo "... libpomp"
+	@echo "... librtsp"
+	@echo "... libulog"
 	@echo "... rtsp_culc"
+	@echo "... libfutils/src/dynmbox.o"
+	@echo "... libfutils/src/dynmbox.i"
+	@echo "... libfutils/src/dynmbox.s"
+	@echo "... libfutils/src/fdutils.o"
+	@echo "... libfutils/src/fdutils.i"
+	@echo "... libfutils/src/fdutils.s"
+	@echo "... libfutils/src/fs.o"
+	@echo "... libfutils/src/fs.i"
+	@echo "... libfutils/src/fs.s"
+	@echo "... libfutils/src/hash.o"
+	@echo "... libfutils/src/hash.i"
+	@echo "... libfutils/src/hash.s"
+	@echo "... libfutils/src/inotify.o"
+	@echo "... libfutils/src/inotify.i"
+	@echo "... libfutils/src/inotify.s"
+	@echo "... libfutils/src/mbox.o"
+	@echo "... libfutils/src/mbox.i"
+	@echo "... libfutils/src/mbox.s"
+	@echo "... libfutils/src/random.o"
+	@echo "... libfutils/src/random.i"
+	@echo "... libfutils/src/random.s"
+	@echo "... libfutils/src/safew.o"
+	@echo "... libfutils/src/safew.i"
+	@echo "... libfutils/src/safew.s"
+	@echo "... libfutils/src/synctools.o"
+	@echo "... libfutils/src/synctools.i"
+	@echo "... libfutils/src/synctools.s"
+	@echo "... libfutils/src/systimetools.o"
+	@echo "... libfutils/src/systimetools.i"
+	@echo "... libfutils/src/systimetools.s"
+	@echo "... libfutils/src/timetools.o"
+	@echo "... libfutils/src/timetools.i"
+	@echo "... libfutils/src/timetools.s"
+	@echo "... libfutils/src/varint.o"
+	@echo "... libfutils/src/varint.i"
+	@echo "... libfutils/src/varint.s"
+	@echo "... libpomp/src/pomp_addr.o"
+	@echo "... libpomp/src/pomp_addr.i"
+	@echo "... libpomp/src/pomp_addr.s"
+	@echo "... libpomp/src/pomp_buffer.o"
+	@echo "... libpomp/src/pomp_buffer.i"
+	@echo "... libpomp/src/pomp_buffer.s"
+	@echo "... libpomp/src/pomp_conn.o"
+	@echo "... libpomp/src/pomp_conn.i"
+	@echo "... libpomp/src/pomp_conn.s"
+	@echo "... libpomp/src/pomp_ctx.o"
+	@echo "... libpomp/src/pomp_ctx.i"
+	@echo "... libpomp/src/pomp_ctx.s"
+	@echo "... libpomp/src/pomp_decoder.o"
+	@echo "... libpomp/src/pomp_decoder.i"
+	@echo "... libpomp/src/pomp_decoder.s"
+	@echo "... libpomp/src/pomp_encoder.o"
+	@echo "... libpomp/src/pomp_encoder.i"
+	@echo "... libpomp/src/pomp_encoder.s"
+	@echo "... libpomp/src/pomp_evt.o"
+	@echo "... libpomp/src/pomp_evt.i"
+	@echo "... libpomp/src/pomp_evt.s"
+	@echo "... libpomp/src/pomp_log.o"
+	@echo "... libpomp/src/pomp_log.i"
+	@echo "... libpomp/src/pomp_log.s"
+	@echo "... libpomp/src/pomp_loop.o"
+	@echo "... libpomp/src/pomp_loop.i"
+	@echo "... libpomp/src/pomp_loop.s"
+	@echo "... libpomp/src/pomp_msg.o"
+	@echo "... libpomp/src/pomp_msg.i"
+	@echo "... libpomp/src/pomp_msg.s"
+	@echo "... libpomp/src/pomp_prot.o"
+	@echo "... libpomp/src/pomp_prot.i"
+	@echo "... libpomp/src/pomp_prot.s"
+	@echo "... libpomp/src/pomp_timer.o"
+	@echo "... libpomp/src/pomp_timer.i"
+	@echo "... libpomp/src/pomp_timer.s"
+	@echo "... libpomp/src/pomp_watchdog.o"
+	@echo "... libpomp/src/pomp_watchdog.i"
+	@echo "... libpomp/src/pomp_watchdog.s"
+	@echo "... librtsp/src/rtsp.o"
+	@echo "... librtsp/src/rtsp.i"
+	@echo "... librtsp/src/rtsp.s"
+	@echo "... librtsp/src/rtsp_client.o"
+	@echo "... librtsp/src/rtsp_client.i"
+	@echo "... librtsp/src/rtsp_client.s"
+	@echo "... librtsp/src/rtsp_client_session.o"
+	@echo "... librtsp/src/rtsp_client_session.i"
+	@echo "... librtsp/src/rtsp_client_session.s"
+	@echo "... librtsp/src/rtsp_server.o"
+	@echo "... librtsp/src/rtsp_server.i"
+	@echo "... librtsp/src/rtsp_server.s"
+	@echo "... librtsp/src/rtsp_server_request.o"
+	@echo "... librtsp/src/rtsp_server_request.i"
+	@echo "... librtsp/src/rtsp_server_request.s"
+	@echo "... librtsp/src/rtsp_server_session.o"
+	@echo "... librtsp/src/rtsp_server_session.i"
+	@echo "... librtsp/src/rtsp_server_session.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... ulog/libulog/ulog_read.o"
+	@echo "... ulog/libulog/ulog_read.i"
+	@echo "... ulog/libulog/ulog_read.s"
+	@echo "... ulog/libulog/ulog_write.o"
+	@echo "... ulog/libulog/ulog_write.i"
+	@echo "... ulog/libulog/ulog_write.s"
+	@echo "... ulog/libulog/ulog_write_android.o"
+	@echo "... ulog/libulog/ulog_write_android.i"
+	@echo "... ulog/libulog/ulog_write_android.s"
+	@echo "... ulog/libulog/ulog_write_bin.o"
+	@echo "... ulog/libulog/ulog_write_bin.i"
+	@echo "... ulog/libulog/ulog_write_bin.s"
+	@echo "... ulog/libulog/ulog_write_raw.o"
+	@echo "... ulog/libulog/ulog_write_raw.i"
+	@echo "... ulog/libulog/ulog_write_raw.s"
 .PHONY : help
 
 

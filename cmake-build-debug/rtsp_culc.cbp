@@ -8,80 +8,425 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/root/rtsp_culc/cmake-build-debug"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/root/rtsp_culc/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/root/rtsp_culc/cmake-build-debug"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rtsp_culc">
-				<Option output="/root/rtsp_culc/cmake-build-debug/rtsp_culc" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/rtsp_culc/cmake-build-debug"/>
+				<Option output="/root/Documents/rtsp_culc/cmake-build-debug/rtsp_culc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/root/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libfutils/include"/>
+					<Add directory="/root/Documents/rtsp_culc/ulog/libulog/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libpomp/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtsp_culc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtsp_culc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rtsp_culc/fast">
-				<Option output="/root/rtsp_culc/cmake-build-debug/rtsp_culc" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/rtsp_culc/cmake-build-debug"/>
+				<Option output="/root/Documents/rtsp_culc/cmake-build-debug/rtsp_culc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/root/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libfutils/include"/>
+					<Add directory="/root/Documents/rtsp_culc/ulog/libulog/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libpomp/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtsp_culc/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/root/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtsp_culc/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libpomp">
+				<Option output="/root/Documents/rtsp_culc/cmake-build-debug/liblibpomp.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/Documents/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libfutils/include"/>
+					<Add directory="/root/Documents/rtsp_culc/ulog/libulog/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libpomp/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 libpomp"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libpomp/fast">
+				<Option output="/root/Documents/rtsp_culc/cmake-build-debug/liblibpomp.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/Documents/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libfutils/include"/>
+					<Add directory="/root/Documents/rtsp_culc/ulog/libulog/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libpomp/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 libpomp/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libulog">
+				<Option output="/root/Documents/rtsp_culc/cmake-build-debug/liblibulog.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/Documents/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libfutils/include"/>
+					<Add directory="/root/Documents/rtsp_culc/ulog/libulog/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 libulog"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libulog/fast">
+				<Option output="/root/Documents/rtsp_culc/cmake-build-debug/liblibulog.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/Documents/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libfutils/include"/>
+					<Add directory="/root/Documents/rtsp_culc/ulog/libulog/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 libulog/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="librtsp">
+				<Option output="/root/Documents/rtsp_culc/cmake-build-debug/liblibrtsp.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/Documents/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libfutils/include"/>
+					<Add directory="/root/Documents/rtsp_culc/ulog/libulog/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libpomp/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 librtsp"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="librtsp/fast">
+				<Option output="/root/Documents/rtsp_culc/cmake-build-debug/liblibrtsp.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/Documents/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libfutils/include"/>
+					<Add directory="/root/Documents/rtsp_culc/ulog/libulog/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libpomp/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 librtsp/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libfutils">
+				<Option output="/root/Documents/rtsp_culc/cmake-build-debug/liblibfutils.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/Documents/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libfutils/include"/>
+					<Add directory="/root/Documents/rtsp_culc/ulog/libulog/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 libfutils"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libfutils/fast">
+				<Option output="/root/Documents/rtsp_culc/cmake-build-debug/liblibfutils.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/Documents/rtsp_culc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/Documents/rtsp_culc/librtsp/include"/>
+					<Add directory="/root/Documents/rtsp_culc/libfutils/include"/>
+					<Add directory="/root/Documents/rtsp_culc/ulog/libulog/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 libfutils/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/root/Documents/rtsp_culc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/root/rtsp_culc/main.c">
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/dynmbox.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/fdutils.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/fs.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/hash.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/inotify.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/mbox.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/random.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/safew.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/safew_types.h">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/synctools.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/systimetools.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/timetools.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libfutils/src/varint.c">
+			<Option target="libfutils"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_addr.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_buffer.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_buffer.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_config.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_conn.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_ctx.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_decoder.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_encoder.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_evt.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_evt.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_list.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_log.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_log.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_loop.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_loop.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_msg.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_priv.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_prot.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_prot.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_timer.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_timer.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_watchdog.c">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/pomp_watchdog.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/sys_eventfd.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/libpomp/src/sys_timerfd.h">
+			<Option target="libpomp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/librtsp/src/rtsp.c">
+			<Option target="librtsp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/librtsp/src/rtsp_client.c">
+			<Option target="librtsp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/librtsp/src/rtsp_client_priv.h">
+			<Option target="librtsp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/librtsp/src/rtsp_client_session.c">
+			<Option target="librtsp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/librtsp/src/rtsp_priv.h">
+			<Option target="librtsp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/librtsp/src/rtsp_server.c">
+			<Option target="librtsp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/librtsp/src/rtsp_server_priv.h">
+			<Option target="librtsp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/librtsp/src/rtsp_server_request.c">
+			<Option target="librtsp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/librtsp/src/rtsp_server_session.c">
+			<Option target="librtsp"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/main.c">
 			<Option target="rtsp_culc"/>
 		</Unit>
-		<Unit filename="/root/rtsp_culc/CMakeLists.txt">
+		<Unit filename="/root/Documents/rtsp_culc/ulog/libulog/ulog_common.h">
+			<Option target="libulog"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/ulog/libulog/ulog_read.c">
+			<Option target="libulog"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/ulog/libulog/ulog_write.c">
+			<Option target="libulog"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/ulog/libulog/ulog_write_android.c">
+			<Option target="libulog"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/ulog/libulog/ulog_write_bin.c">
+			<Option target="libulog"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/ulog/libulog/ulog_write_raw.c">
+			<Option target="libulog"/>
+		</Unit>
+		<Unit filename="/root/Documents/rtsp_culc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

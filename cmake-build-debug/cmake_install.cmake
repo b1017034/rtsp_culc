@@ -1,4 +1,4 @@
-# Install script for directory: /root/rtsp_culc
+# Install script for directory: /root/Documents/rtsp_culc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/rtsp_culc/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/Documents/rtsp_culc/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

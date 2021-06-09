@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/rtsp_culc.dir/main.c.o -o rtsp_culc  -llibrtsp/src 
+/usr/bin/cc -g CMakeFiles/rtsp_culc.dir/main.c.o -o rtsp_culc  -Wl,-rpath,/root/Documents/rtsp_culc/cmake-build-debug liblibrtsp.so liblibpomp.so liblibulog.so liblibfutils.so 

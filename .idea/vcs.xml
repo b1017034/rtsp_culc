@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libfutils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libpomp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/librtsp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ulog" vcs="Git" />
   </component>
 </project>

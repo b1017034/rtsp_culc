@@ -4,3 +4,9 @@
 [submodule "libpomp"]
 	path = libpomp
 	url = https://github.com/Parrot-Developers/libpomp.git
+[submodule "libfutils"]
+	path = libfutils
+	url = git@github.com:Parrot-Developers/libfutils.git
+[submodule "ulog"]
+	path = ulog
+	url = git@github.com:Parrot-Developers/ulog.git

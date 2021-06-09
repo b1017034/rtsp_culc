@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/root/rtsp_culc/librtsp/include
+C_INCLUDES = -I/root/Documents/rtsp_culc/librtsp/include -I/root/Documents/rtsp_culc/libfutils/include -I/root/Documents/rtsp_culc/ulog/libulog/include -I/root/Documents/rtsp_culc/libpomp/include
 
 C_FLAGS = -g -std=gnu99
 
