@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/socketreplay.dir/SocketReplay.cpp.o CMakeFiles/socketreplay.dir/RTSP.cpp.o CMakeFiles/socketreplay.dir/Network.cpp.o CMakeFiles/socketreplay.dir/util.cpp.o CMakeFiles/socketreplay.dir/RTP.cpp.o CMakeFiles/socketreplay.dir/H264.cpp.o CMakeFiles/socketreplay.dir/RTCP.cpp.o  -o socketreplay  -lpthread 

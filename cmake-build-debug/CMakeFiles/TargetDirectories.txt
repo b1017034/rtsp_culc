@@ -1,7 +1,5 @@
-/root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles/edit_cache.dir
-/root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles/rtsp_culc.dir
-/root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles/libpomp.dir
 /root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles/libulog.dir
-/root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles/librtsp.dir
-/root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles/libfutils.dir
+/root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles/rtsp_culc.dir
+/root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles/socketreplay.dir
+/root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles/test.dir
+/root/Documents/rtsp_culc/cmake-build-debug/CMakeFiles/edit_cache.dir

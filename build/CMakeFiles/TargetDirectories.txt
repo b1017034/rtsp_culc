@@ -1,0 +1,5 @@
+/root/Documents/rtsp_culc/build/CMakeFiles/rebuild_cache.dir
+/root/Documents/rtsp_culc/build/CMakeFiles/edit_cache.dir
+/root/Documents/rtsp_culc/build/CMakeFiles/test.dir
+/root/Documents/rtsp_culc/build/CMakeFiles/socketreplay.dir
+/root/Documents/rtsp_culc/build/CMakeFiles/rtsp_culc.dir

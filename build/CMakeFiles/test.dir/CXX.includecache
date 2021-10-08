@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/Documents/rtsp_culc/test.cpp
+stdio.h
+-
+sys/types.h
+-
+pthread.h
+-
+stdlib.h
+-
+unistd.h
+-
+string.h
+-
+netdb.h
+-
+sys/socket.h
+-
+sys/uio.h
+-
+sys/param.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+
