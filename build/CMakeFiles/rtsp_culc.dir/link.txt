@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/rtsp_culc.dir/main.cpp.o CMakeFiles/rtsp_culc.dir/RTSP.cpp.o CMakeFiles/rtsp_culc.dir/Network.cpp.o CMakeFiles/rtsp_culc.dir/util.cpp.o CMakeFiles/rtsp_culc.dir/RTP.cpp.o CMakeFiles/rtsp_culc.dir/H264.cpp.o CMakeFiles/rtsp_culc.dir/RTCP.cpp.o  -o rtsp_culc 

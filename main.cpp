@@ -4,8 +4,8 @@
 //#include <sys/socket.h> //アドレスドメイン
 
 /* local headers */
-#include "RTSP.h"
-#include "Network.h"
+#include "include/RTSP.h"
+#include "include/Network.h"
 
 #include "util.cpp"
 

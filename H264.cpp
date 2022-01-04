@@ -5,7 +5,7 @@
 #include <cstring>
 #include <fstream>   // ifstream, ofstream
 #include <vector>
-#include "H264.h"
+#include "include/H264.h"
 #include "util.cpp"
 
 void H264::fromSdp(std::string sprop) {
